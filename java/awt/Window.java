@@ -392,9 +392,15 @@ public class Window extends Container implements Accessible {
     private transient float securityWarningAlignmentX = RIGHT_ALIGNMENT;
     private transient float securityWarningAlignmentY = TOP_ALIGNMENT;
 
+    /**
+     * 加载本地库文件
+     */
     static {
         /* ensure that the necessary native libraries are loaded */
         Toolkit.loadLibraries();
+        /**
+         * 加载环境
+         */
         if (!GraphicsEnvironment.isHeadless()) {
             initIDs();
         }
@@ -959,6 +965,10 @@ public class Window extends Container implements Accessible {
         }
     }
 
+
+    /**
+     *  第一个窗口显示之前是否是原子的
+     */
     static private final AtomicBoolean
         beforeFirstWindowShown = new AtomicBoolean(true);
 
@@ -2849,6 +2859,9 @@ public class Window extends Container implements Accessible {
      *
      * Synchronization: ObjectLock
      */
+    /**
+     * windows 默认保护模式？
+     */
     private Type type = Type.NORMAL;
 
     /**
@@ -2894,6 +2907,9 @@ public class Window extends Container implements Accessible {
      * The window serialized data version.
      *
      * @serial
+     */
+    /**
+     * windows 序列化数据版本
      */
     private int windowSerializedDataVersion = 2;
 
@@ -3394,6 +3410,9 @@ public class Window extends Container implements Accessible {
         return super.canContainFocusOwner(focusOwnerCandidate) && isFocusableWindow();
     }
 
+    /**
+     * 本地平台
+     */
     private volatile boolean locationByPlatform = locationByPlatformProp;
 
 
@@ -4026,6 +4045,9 @@ public class Window extends Container implements Accessible {
         return new Point2D.Double(wx, wy);
     }
 
+    /**
+     * 静态加载window 窗体 和一些 常用信息 eg： 图标等
+     */
     static {
         AWTAccessor.setWindowAccessor(new AWTAccessor.WindowAccessor() {
             public float getOpacity(Window window) {
@@ -4117,6 +4139,10 @@ public class Window extends Container implements Accessible {
 /**
  * This class is no longer used, but is maintained for Serialization
  * backward-compatibility.
+ */
+
+/**
+ * 置顶窗口管理
  */
 class FocusManager implements java.io.Serializable {
     Container focusRoot;
