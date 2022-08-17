@@ -45,6 +45,10 @@ import java.util.Iterator;
  * @author      Arthur van Hoff
  * @since       JDK1.0
  */
+
+/**
+ * 程序上下文.
+ */
 public interface AppletContext {
     /**
      * Creates an audio clip.

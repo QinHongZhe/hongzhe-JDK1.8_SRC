@@ -37,6 +37,10 @@ import java.net.URL;
  * @see         java.applet.Applet#setStub(java.applet.AppletStub)
  * @since       JDK1.0
  */
+
+/**
+ * 相当于介于真实看到的程序和系统之间的通道程序
+ */
 public interface AppletStub {
     /**
      * Determines if the applet is active. An applet is active just

@@ -36,22 +36,31 @@ package java.applet;
  */
 
 /**
- * 声音播放的剪辑
+ * 声音播放
  */
 public interface AudioClip {
     /**
      * Starts playing this audio clip. Each time this method is called,
      * the clip is restarted from the beginning.
      */
+    /**
+     * 播放
+     */
     void play();
 
     /**
      * Starts playing this audio clip in a loop.
      */
+    /**
+     * 循环
+     */
     void loop();
 
     /**
      * Stops playing this audio clip.
+     */
+    /**
+     * 停止
      */
     void stop();
 }

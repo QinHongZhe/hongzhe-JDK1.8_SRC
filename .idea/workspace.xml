@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/highlightedFiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/sun/com_readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/java_readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javax/javax_readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/org_readme.md" afterDir="false" />
+    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: 最外面目录说明">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/applet/Applet.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/applet/Applet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/applet/AppletContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/applet/AppletContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/applet/AppletStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/applet/AppletStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/applet/AudioClip.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/applet/AudioClip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,9 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,8 +69,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/workspace/JDK1.8_SRC/com/sun",
+    "last_opened_file_path": "D:/workspace/JDK1.8_SRC",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -97,8 +98,17 @@
       <option name="presentableId" value="Default" />
       <updated>1637133352213</updated>
       <workItem from="1637133353351" duration="2604000" />
-      <workItem from="1660704678565" duration="650000" />
+      <workItem from="1660704678565" duration="743000" />
+      <workItem from="1660705569970" duration="867000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 最外面目录说明">
+      <created>1660705346223</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660705346223</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -151,6 +161,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 最外面目录说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 最外面目录说明" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/com/sun/corba/se/PortableActivationIDL/_ActivatorImplBase.java">
