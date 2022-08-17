@@ -474,10 +474,17 @@ public class Window extends Container implements Accessible {
         }
     }
 
+    /**
+     * 初始化图形配置.
+     * @param gc
+     * @return
+     */
     private GraphicsConfiguration initGC(GraphicsConfiguration gc) {
+        // 图形配置检查
         GraphicsEnvironment.checkHeadless();
-
+        
         if (gc == null) {
+            // 获取本地图形配置和驱动
             gc = GraphicsEnvironment.getLocalGraphicsEnvironment().
                 getDefaultScreenDevice().getDefaultConfiguration();
         }
@@ -486,6 +493,10 @@ public class Window extends Container implements Accessible {
         return gc;
     }
 
+    /**
+     * 无返回值图形配置.
+     * @param gc
+     */
     private void init(GraphicsConfiguration gc) {
         GraphicsEnvironment.checkHeadless();
 
@@ -538,6 +549,10 @@ public class Window extends Container implements Accessible {
      *
      * @see java.awt.GraphicsEnvironment#isHeadless
      */
+    /**
+     * 构造一个最初不可见的默认窗口.
+     * @throws HeadlessException
+     */
     Window() throws HeadlessException {
         GraphicsEnvironment.checkHeadless();
         init((GraphicsConfiguration)null);
@@ -562,6 +577,10 @@ public class Window extends Container implements Accessible {
      *
      * @see java.awt.GraphicsEnvironment#isHeadless
      * @see #isShowing
+     */
+    /**
+     * 构造一个初始不可见的窗口并且该窗口依赖与父窗口
+     * @param owner
      */
     public Window(Frame owner) {
         this(owner == null ? (GraphicsConfiguration)null :
@@ -632,6 +651,10 @@ public class Window extends Container implements Accessible {
         ownedInit(owner);
     }
 
+    /**
+     * 初始化一个父窗口.
+     * @param owner
+     */
     private void ownedInit(Window owner) {
         this.parent = owner;
         if (owner != null) {
@@ -652,6 +675,10 @@ public class Window extends Container implements Accessible {
      * Construct a name for this component.  Called by getName() when the
      * name is null.
      */
+    /**
+     * 为当前组件构造一个名字为null的名称
+     * @return
+     */
     String constructComponentName() {
         synchronized (Window.class) {
             return base + nameCounter++;
@@ -669,6 +696,10 @@ public class Window extends Container implements Accessible {
      * @see       #setIconImages
      * @see       #setIconImage(Image)
      * @since     1.6
+     */
+    /**
+     * 获取该窗口的图标列表.
+     * @return
      */
     public java.util.List<Image> getIconImages() {
         java.util.List<Image> icons = this.icons;
@@ -705,6 +736,10 @@ public class Window extends Container implements Accessible {
      * @see       #getIconImages()
      * @see       #setIconImage(Image)
      * @since     1.6
+     */
+    /**
+     * 设置窗口图标（由于窗口大小尺寸不同因此图标不同）
+     * @param icons
      */
     public synchronized void setIconImages(java.util.List<? extends Image> icons) {
         this.icons = (icons == null) ? new ArrayList<Image>() :
