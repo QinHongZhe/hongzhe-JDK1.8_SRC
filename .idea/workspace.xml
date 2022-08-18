@@ -66,7 +66,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/workspace/JDK1.8_SRC",
+    "last_opened_file_path": "D:/javacode_workspace/hongzhe-JDK1.8_SRC",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "yiiguxing.plugin.translate",
     "vue.rearranger.settings.migration": "true"
@@ -97,6 +97,7 @@
       <workItem from="1660704678565" duration="743000" />
       <workItem from="1660705569970" duration="867000" />
       <workItem from="1660739446163" duration="2004000" />
+      <workItem from="1660788346404" duration="167000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 最外面目录说明">
       <created>1660705346223</created>

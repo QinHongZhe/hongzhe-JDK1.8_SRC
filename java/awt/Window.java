@@ -162,12 +162,18 @@ public class Window extends Container implements Accessible {
      * @see   #setType
      * @since 1.7
      */
+    /**
+     * 窗口类型枚举
+     */
     public static enum Type {
         /**
          * Represents a <i>normal</i> window.
          *
          * This is the default type for objects of the {@code Window} class or
          * its descendants. Use this type for regular top-level windows.
+         */
+        /**
+         * 普通的窗口
          */
         NORMAL,
 
@@ -179,6 +185,9 @@ public class Window extends Container implements Accessible {
          * title-bar if the window is either a {@code Frame} or a {@code
          * Dialog} object, and if it has its decorations enabled.
          */
+        /**
+         * 带工具栏的窗口
+         */
         UTILITY,
 
         /**
@@ -188,6 +197,9 @@ public class Window extends Container implements Accessible {
          * tooltip. On some platforms, windows of that type may be forcibly
          * made undecorated even if they are instances of the {@code Frame} or
          * {@code Dialog} class, and have decorations enabled.
+         */
+        /**
+         * 带关闭按钮的窗口
          */
         POPUP
     }
