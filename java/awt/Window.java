@@ -900,6 +900,10 @@ public class Window extends Container implements Accessible {
      * @see #pack
      * @since 1.6
      */
+    /**
+     * 设置窗口大小（可以自动调节）
+     * @param minimumSize
+     */
     public void setMinimumSize(Dimension minimumSize) {
         synchronized (getTreeLock()) {
             super.setMinimumSize(minimumSize);
@@ -969,6 +973,11 @@ public class Window extends Container implements Accessible {
      * the requested data, so that the {@code Window} object is placed and sized
      * in a way that corresponds closely to the desktop settings.
      */
+    /**
+     * 设置绝对位置.
+     * @param x
+     * @param y
+     */
     @Override
     public void setLocation(int x, int y) {
         super.setLocation(x, y);
@@ -990,6 +999,13 @@ public class Window extends Container implements Accessible {
     /**
      * @deprecated As of JDK version 1.1,
      * replaced by {@code setBounds(int, int, int, int)}.
+     */
+    /**
+     * 该方法已经弃用
+     * @param x
+     * @param y
+     * @param width
+     * @param height
      */
     @Deprecated
     public void reshape(int x, int y, int width, int height) {
@@ -1067,6 +1083,10 @@ public class Window extends Container implements Accessible {
      * @see java.awt.Window#setAutoRequestFocus
      * @see java.awt.Window#isFocusableWindow
      */
+    /**
+     * 设置显示隐藏
+     * @param b
+     */
     public void setVisible(boolean b) {
         super.setVisible(b);
     }
@@ -1081,6 +1101,9 @@ public class Window extends Container implements Accessible {
      * @see       #toFront
      * @deprecated As of JDK version 1.5, replaced by
      * {@link #setVisible(boolean)}.
+     */
+    /**
+     * 显示
      */
     @Deprecated
     public void show() {
@@ -1125,6 +1148,7 @@ public class Window extends Container implements Accessible {
         }
     }
 
+
     static void updateChildFocusableWindowState(Window w) {
         if (w.getPeer() != null && w.isShowing()) {
             ((WindowPeer)w.getPeer()).updateFocusableWindowState();
@@ -1154,6 +1178,9 @@ public class Window extends Container implements Accessible {
      * @see #dispose
      * @deprecated As of JDK version 1.5, replaced by
      * {@link #setVisible(boolean)}.
+     */
+    /**
+     * 隐藏窗口
      */
     @Deprecated
     public void hide() {
@@ -1199,6 +1226,9 @@ public class Window extends Container implements Accessible {
      * @see Component#isDisplayable
      * @see #pack
      * @see #show
+     */
+    /**
+     * 释放（销毁）资源
      */
     public void dispose() {
         doDispose();
@@ -1339,6 +1369,9 @@ public class Window extends Container implements Accessible {
      * @see       #toBack
      * @see       #setAutoRequestFocus
      * @see       #isFocusableWindow
+     */
+    /**
+     * 将可见窗口置顶
      */
     public void toFront() {
         toFront_NoClientCode();
