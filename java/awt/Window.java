@@ -1416,6 +1416,9 @@ public class Window extends Container implements Accessible {
      *
      * @see       #toFront
      */
+    /**
+     * 将窗口设置为后台
+     */
     public void toBack() {
         toBack_NoClientCode();
     }
@@ -1443,6 +1446,10 @@ public class Window extends Container implements Accessible {
      * @see       Toolkit
      * @see       Toolkit#getDefaultToolkit
      * @see       Component#getToolkit
+     */
+    /**
+     * 获取工具包
+     * @return
      */
     public Toolkit getToolkit() {
         return Toolkit.getDefaultToolkit();
