@@ -1524,6 +1524,10 @@ public class Window extends Container implements Accessible {
      * @see Component#getInputContext
      * @since 1.2
      */
+    /**
+     * 获取输入上下文
+     * @return
+     */
     public InputContext getInputContext() {
         synchronized (inputContextLock) {
             if (inputContext == null) {
@@ -1547,6 +1551,10 @@ public class Window extends Container implements Accessible {
      * @see       Cursor
      * @since     JDK1.1
      */
+    /**
+     * 设置焦点
+     * @param cursor
+     */
     public void setCursor(Cursor cursor) {
         if (cursor == null) {
             cursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
@@ -1557,6 +1565,10 @@ public class Window extends Container implements Accessible {
     /**
      * Returns the owner of this window.
      * @since 1.2
+     */
+    /**
+     * 获取所有者
+     * @return
      */
     public Window getOwner() {
         return getOwner_NoClientCode();
@@ -1604,6 +1616,11 @@ public class Window extends Container implements Accessible {
         return realCopy;
     }
 
+
+    /**
+     * 是否是模拟状态
+     * @return
+     */
     boolean isModalBlocked() {
         return modalBlocker != null;
     }
@@ -1629,6 +1646,11 @@ public class Window extends Container implements Accessible {
      * @see #addNotify
      * @see #removeNotify
      */
+
+    /**
+     * 获取所有windows
+     * @return
+     */
     static IdentityArrayList<Window> getAllWindows() {
         synchronized (allWindows) {
             IdentityArrayList<Window> v = new IdentityArrayList<Window>();
@@ -1637,6 +1659,10 @@ public class Window extends Container implements Accessible {
         }
     }
 
+    /**
+     * 获取所有未锁定的windows
+     * @return
+     */
     static IdentityArrayList<Window> getAllUnblockedWindows() {
         synchronized (allWindows) {
             IdentityArrayList<Window> unblocked = new IdentityArrayList<Window>();
@@ -1650,6 +1676,11 @@ public class Window extends Container implements Accessible {
         }
     }
 
+    /**
+     * 从上下文中获取窗口
+     * @param appContext
+     * @return
+     */
     private static Window[] getWindows(AppContext appContext) {
         synchronized (Window.class) {
             Window realCopy[];

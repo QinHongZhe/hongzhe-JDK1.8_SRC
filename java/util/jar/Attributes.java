@@ -51,6 +51,10 @@ import sun.misc.ASCIICaseInsensitiveComparator;
  * @see     Manifest
  * @since   1.2
  */
+
+/**
+ * jar 包属性.
+ */
 public class Attributes implements Map<Object,Object>, Cloneable {
     /**
      * The attribute name-value mappings.
@@ -59,6 +63,9 @@ public class Attributes implements Map<Object,Object>, Cloneable {
 
     /**
      * Constructs a new, empty Attributes object with default size.
+     */
+    /**
+     * 属性大小11
      */
     public Attributes() {
         this(11);
@@ -294,6 +301,12 @@ public class Attributes implements Map<Object,Object>, Cloneable {
     /*
      * Writes the current attributes to the specified data output stream.
      * XXX Need to handle UTF8 values and break up lines longer than 72 bytes
+     */
+
+    /**
+     * 把当前属性写入到一个特殊的数据流中
+     * @param os
+     * @throws IOException
      */
      void write(DataOutputStream os) throws IOException {
         Iterator<Map.Entry<Object, Object>> it = entrySet().iterator();
