@@ -1470,10 +1470,17 @@ public class Window extends Container implements Accessible {
      * and returns the string value of that property.
      * @return    the warning string for this window.
      */
+    /**
+     * 获取警告字符串
+     * @return
+     */
     public final String getWarningString() {
         return warningString;
     }
 
+    /**
+     * 设置警告字符串
+     */
     private void setWarningString() {
         warningString = null;
         SecurityManager sm = System.getSecurityManager();
@@ -1499,6 +1506,10 @@ public class Window extends Container implements Accessible {
      * @return    the locale that is set for this window.
      * @see       java.util.Locale
      * @since     JDK1.1
+     */
+    /**
+     * 获取本地Local
+     * @return
      */
     public Locale getLocale() {
       if (this.locale == null) {
