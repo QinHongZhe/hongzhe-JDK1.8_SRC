@@ -69,9 +69,25 @@ import sun.security.util.SignatureFileVerifier;
  */
 public
 class JarFile extends ZipFile {
+
+    /**
+     * 描述文件
+     */
     private SoftReference<Manifest> manRef;
+
+    /**
+     * jar 实体
+     */
     private JarEntry manEntry;
+
+    /**
+     * jar 校验
+     */
     private JarVerifier jv;
+
+    /**
+     * 初始化
+     */
     private boolean jvInitialized;
     private boolean verify;
 
@@ -87,6 +103,9 @@ class JarFile extends ZipFile {
 
     /**
      * The JAR manifest file name.
+     */
+    /**
+     * 配置文件名称
      */
     public static final String MANIFEST_NAME = "META-INF/MANIFEST.MF";
 
@@ -176,10 +195,21 @@ class JarFile extends ZipFile {
      *         may be thrown if the jar file has been closed
      * @throws IOException  if an I/O error has occurred
      */
+    /**
+     * 获取描述文件.
+     * @return
+     * @throws IOException
+     */
     public Manifest getManifest() throws IOException {
         return getManifestFromReference();
     }
 
+
+    /**
+     * 从依赖中获取描述文件
+     * @return
+     * @throws IOException
+     */
     private Manifest getManifestFromReference() throws IOException {
         Manifest man = manRef != null ? manRef.get() : null;
 
