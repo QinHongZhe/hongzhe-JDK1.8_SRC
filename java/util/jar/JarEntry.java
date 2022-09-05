@@ -33,10 +33,17 @@ import java.security.cert.Certificate;
 /**
  * This class is used to represent a JAR file entry.
  */
+
+/**
+ * java Entry 集成 ZipEntry
+ */
 public
 class JarEntry extends ZipEntry {
+    // 属性
     Attributes attr;
+    //  证书
     Certificate[] certs;
+    // 代码签名
     CodeSigner[] signers;
 
     /**
