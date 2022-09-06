@@ -332,6 +332,11 @@ class JarFile extends ZipFile {
                 return null;
             }
         }
+
+        /**
+         * 获取证书文件.
+         * @return
+         */
         public Certificate[] getCertificates() {
             try {
                 maybeInstantiateVerifier();
@@ -343,6 +348,11 @@ class JarFile extends ZipFile {
             }
             return certs == null ? null : certs.clone();
         }
+
+        /**
+         * 获取代码签名
+         * @return
+         */
         public CodeSigner[] getCodeSigners() {
             try {
                 maybeInstantiateVerifier();
@@ -526,6 +536,10 @@ class JarFile extends ZipFile {
         CLASSPATH_OPTOSFT[9]=1;
     }
 
+    /**
+     * 获取实体
+     * @return
+     */
     private JarEntry getManEntry() {
         if (manEntry == null) {
             // First look up manifest entry using standard name

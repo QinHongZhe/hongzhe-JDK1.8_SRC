@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: util jar Stream" />
+    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: util jar Stream">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/util/jar/JarFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/jar/JarFile.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +104,7 @@
       <workItem from="1662109044346" duration="666000" />
       <workItem from="1662123780100" duration="40000" />
       <workItem from="1662366742274" duration="2177000" />
-      <workItem from="1662425047956" duration="1016000" />
+      <workItem from="1662425047956" duration="1733000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 最外面目录说明">
       <created>1660705346223</created>
@@ -166,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662425732763</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: util jar Stream">
+      <created>1662426085923</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662426085923</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
