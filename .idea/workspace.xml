@@ -103,7 +103,8 @@
       <workItem from="1662080887400" duration="3930000" />
       <workItem from="1662109044346" duration="666000" />
       <workItem from="1662123780100" duration="40000" />
-      <workItem from="1662366742274" duration="1554000" />
+      <workItem from="1662366742274" duration="2177000" />
+      <workItem from="1662425047956" duration="665000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 最外面目录说明">
       <created>1660705346223</created>
@@ -154,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662366845643</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: util jarEntry">
+      <created>1662369681055</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662369681055</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

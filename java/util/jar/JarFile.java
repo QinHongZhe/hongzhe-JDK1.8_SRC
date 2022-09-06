@@ -234,6 +234,10 @@ class JarFile extends ZipFile {
         return man;
     }
 
+    /**
+     * 获取本地元数据实体名字
+     * @return
+     */
     private native String[] getMetaInfEntryNames();
 
     /**
@@ -304,6 +308,10 @@ class JarFile extends ZipFile {
         return new JarEntryIterator();
     }
 
+    /***
+     * 继承的Stream
+     * @return
+     */
     @Override
     public Stream<JarEntry> stream() {
         return StreamSupport.stream(Spliterators.spliterator(
