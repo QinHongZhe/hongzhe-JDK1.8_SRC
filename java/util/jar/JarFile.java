@@ -599,6 +599,10 @@ class JarFile extends ZipFile {
      * On first invocation, check if the JAR file has the Class-Path
      * attribute. A no-op on subsequent calls.
      */
+    /**
+     * 校验特殊属性.
+     * @throws IOException
+     */
     private void checkForSpecialAttributes() throws IOException {
         if (hasCheckedSpecialAttributes) return;
         if (!isKnownNotToHaveSpecialAttributes()) {
@@ -623,6 +627,7 @@ class JarFile extends ZipFile {
             javaHome = AccessController.doPrivileged(
                 new GetPropertyAction("java.home"));
         }
+        // 过滤特殊的jar包
         if (jarNames == null) {
             String[] names = new String[11];
             String fileSep = File.separator;
