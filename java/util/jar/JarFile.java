@@ -675,6 +675,11 @@ class JarFile extends ZipFile {
         return new JarFileEntry(ze);
     }
 
+    /**
+     * 没有签名的内容.
+     * @param cs
+     * @return
+     */
     Enumeration<String> entryNames(CodeSource[] cs) {
         ensureInitialization();
         if (jv != null) {
@@ -751,6 +756,11 @@ class JarFile extends ZipFile {
         };
     }
 
+    /**
+     * 获取源码
+     * @param url
+     * @return
+     */
     CodeSource[] getCodeSources(URL url) {
         ensureInitialization();
         if (jv != null) {
