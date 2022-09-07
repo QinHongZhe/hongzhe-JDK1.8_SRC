@@ -37,6 +37,11 @@ package java.util.function;
  *
  * @since 1.8
  */
+
+/**
+ * 传入特定的工厂模式相当与new
+ * @param <T>
+ */
 @FunctionalInterface
 public interface Supplier<T> {
 

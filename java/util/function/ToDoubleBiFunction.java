@@ -38,6 +38,12 @@ package java.util.function;
  * @see BiFunction
  * @since 1.8
  */
+
+/**
+ * double 二元函数
+ * @param <T>
+ * @param <U>
+ */
 @FunctionalInterface
 public interface ToDoubleBiFunction<T, U> {
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: util JarOutputStream JarInputStream finish">
+    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: function 函数式编程  开始">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/util/function/ToIntFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/function/ToIntFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/util/function/ToLongBiFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/function/ToLongBiFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/util/function/ToLongFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/function/ToLongFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/util/function/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/function/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/util/function/ToDoubleBiFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/function/ToDoubleBiFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/util/function/ToDoubleFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/function/ToDoubleFunction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <workItem from="1662366742274" duration="2177000" />
       <workItem from="1662425047956" duration="5438000" />
       <workItem from="1662512578045" duration="1164000" />
-      <workItem from="1662514175017" duration="608000" />
+      <workItem from="1662514175017" duration="1116000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 最外面目录说明">
       <created>1660705346223</created>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662512856369</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: function 函数式编程  开始">
+      <created>1662516097557</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662516097557</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -277,7 +284,9 @@
     <MESSAGE value="feat: util jar finish" />
     <MESSAGE value="feat: util jarFile finish" />
     <MESSAGE value="feat: util JarOutputStream JarInputStream finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: util JarOutputStream JarInputStream finish" />
+    <MESSAGE value="feat: function 函数式变成  开始" />
+    <MESSAGE value="feat: function 函数式编程  开始" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: function 函数式编程  开始" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

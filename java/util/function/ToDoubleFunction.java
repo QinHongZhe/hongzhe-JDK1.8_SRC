@@ -36,6 +36,11 @@ package java.util.function;
  * @see Function
  * @since 1.8
  */
+
+/**
+ * double 一元函数
+ * @param <T>
+ */
 @FunctionalInterface
 public interface ToDoubleFunction<T> {
 
