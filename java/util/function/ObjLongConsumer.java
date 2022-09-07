@@ -39,6 +39,11 @@ package java.util.function;
  * @see BiConsumer
  * @since 1.8
  */
+
+/**
+ * 不返任何
+ * @param <T>
+ */
 @FunctionalInterface
 public interface ObjLongConsumer<T> {
 
