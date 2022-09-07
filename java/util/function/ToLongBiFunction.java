@@ -38,6 +38,12 @@ package java.util.function;
  * @see BiFunction
  * @since 1.8
  */
+
+/**
+ * 返回long 的二元函数 （o1,o2）->
+ * @param <T>
+ * @param <U>
+ */
 @FunctionalInterface
 public interface ToLongBiFunction<T, U> {
 

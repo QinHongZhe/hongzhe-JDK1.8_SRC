@@ -36,6 +36,11 @@ package java.util.function;
  * @see Function
  * @since 1.8
  */
+
+/**
+ * 返回int 一元函数
+ * @param <T>
+ */
 @FunctionalInterface
 public interface ToIntFunction<T> {
 

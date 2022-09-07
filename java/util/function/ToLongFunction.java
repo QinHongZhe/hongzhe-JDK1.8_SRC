@@ -36,6 +36,11 @@ package java.util.function;
  * @see Function
  * @since 1.8
  */
+
+/**
+ * 返回long 的一元函数  （o）->
+ * @param <T>
+ */
 @FunctionalInterface
 public interface ToLongFunction<T> {
 

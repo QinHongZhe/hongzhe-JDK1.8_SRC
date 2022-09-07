@@ -38,6 +38,12 @@ package java.util.function;
  * @see BiFunction
  * @since 1.8
  */
+
+/**
+ * int 二元
+ * @param <T>
+ * @param <U>
+ */
 @FunctionalInterface
 public interface ToIntBiFunction<T, U> {
 
