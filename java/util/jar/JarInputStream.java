@@ -42,6 +42,10 @@ import sun.misc.JarIndex;
  * @see     java.util.zip.ZipInputStream
  * @since   1.2
  */
+
+/**
+ * JarInputStream 继承 ZipInputStream
+ */
 public
 class JarInputStream extends ZipInputStream {
     private Manifest man;
