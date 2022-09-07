@@ -36,6 +36,11 @@ import java.util.Objects;
  *
  * @since 1.8
  */
+
+/**
+ * 逻辑判断 与、或、非
+ * @param <T>
+ */
 @FunctionalInterface
 public interface Predicate<T> {
 
