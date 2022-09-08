@@ -35,6 +35,10 @@ package java.util.function;
  * @see Function
  * @since 1.8
  */
+
+/**
+ * long 转换为double
+ */
 @FunctionalInterface
 public interface LongToDoubleFunction {
 

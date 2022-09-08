@@ -9,3 +9,19 @@ A
 org/org_readme.md,0\9\09d8dbbc7fc51df986b5ee8563e5a509dbeac56a
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+V
+&java/util/function/ToLongFunction.java,8\4\84c0b969e01b52e52af580f72fa76f655d31fc1a
+W
+'java/util/function/ToIntBiFunction.java,9\a\9ad711e7413c5242e86b43325f500716199c7bb8
+X
+(java/util/function/ToDoubleFunction.java,8\5\8548a14281a3a8cb8d822deb7182b404c0936ad0
+P
+ java/util/function/Supplier.java,8\6\8620699c6d4dd1ff39fb2561d4e13b73b7456a6a
+Q
+!java/util/function/Predicate.java,5\e\5e27a8674a6036c3b768fd692d0077010c27eafd
+V
+&java/util/function/ObjIntConsumer.java,0\2\0228fcf1137ba413e90472fb95a3ff9f7911c40e
+Z
+*java/util/function/ToDoubleBiFunction.java,8\2\823af1fd53e9dda3619bcc48f3dc9c50f2abc3c0
+W
+'java/util/function/ObjLongConsumer.java,b\9\b9f44b9a4dbee5d0107489556660eb7cb38cca37

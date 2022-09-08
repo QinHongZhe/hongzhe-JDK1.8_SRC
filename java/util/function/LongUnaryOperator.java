@@ -37,6 +37,10 @@ import java.util.Objects;
  * @see UnaryOperator
  * @since 1.8
  */
+
+/**
+ * 返回long 类型计算结果
+ */
 @FunctionalInterface
 public interface LongUnaryOperator {
 
