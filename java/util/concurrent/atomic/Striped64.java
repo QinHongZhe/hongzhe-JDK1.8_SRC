@@ -43,6 +43,10 @@ import java.util.concurrent.ThreadLocalRandom;
  * for classes supporting dynamic striping on 64bit values. The class
  * extends Number so that concrete subclasses must publicly do so.
  */
+
+/**
+ * Striped64是在java8中添加用来支持累加器的并发组件，它可以在并发环境下使用来做某种计数，Striped64的设计思路是在竞争激烈的时候尽量分散竞争，在实现上，Striped64维护了一个base Count和一个Cell数组，计数线程会首先试图更新base变量，如果成功则退出计数，否则会认为当前竞争是很激烈的，那么就会通过Cell数组来分散计数，Striped64根据线程来计算哈希，然后将不同的线程分散到不同的Cell数组的index上，然后这个线程的计数内容就会保存在该Cell的位置上面，基于这种设计，最后的总计数需要结合base以及散落在Cell数组中的计数内容。这种设计思路类似于java7的ConcurrentHashMap实现，也就是所谓的分段锁算法，ConcurrentHashMap会将记录根据key的hashCode来分散到不同的segment上，线程想要操作某个记录只需要锁住这个记录对应着的segment就可以了，而其他segment并不会被锁住，其他线程任然可以去操作其他的segment，这样就显著提高了并发度，虽然如此，java8中的ConcurrentHashMap实现已经抛弃了java7中分段锁的设计，而采用更为轻量级的CAS来协调并发，效率更佳
+ */
 @SuppressWarnings("serial")
 abstract class Striped64 extends Number {
     /*

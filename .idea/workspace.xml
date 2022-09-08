@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: function 函数式编程  LongToDoubleFunction">
-      <change afterPath="$PROJECT_DIR$/java/util/function/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: function 函数式编程  finish">
+      <change beforePath="$PROJECT_DIR$/java/util/concurrent/atomic/Striped64.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/concurrent/atomic/Striped64.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
       <workItem from="1662514175017" duration="3927000" />
       <workItem from="1662598267651" duration="942000" />
       <workItem from="1662599283066" duration="790000" />
-      <workItem from="1662616161096" duration="781000" />
+      <workItem from="1662616161096" duration="1067000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 最外面目录说明">
       <created>1660705346223</created>
@@ -253,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662616259233</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: function 函数式编程  finish">
+      <created>1662617591241</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662617591241</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -325,7 +331,8 @@
     <MESSAGE value="feat: function 函数式编程  Predicate" />
     <MESSAGE value="feat: function 函数式编程  ObjDoubleConsumer" />
     <MESSAGE value="feat: function 函数式编程  LongToDoubleFunction" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: function 函数式编程  LongToDoubleFunction" />
+    <MESSAGE value="feat: function 函数式编程  finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: function 函数式编程  finish" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
