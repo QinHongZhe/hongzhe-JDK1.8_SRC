@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: atomic Striped64">
-      <change afterPath="$PROJECT_DIR$/java/util/concurrent/atomic/readme.md" afterDir="false" />
+    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: atomic">
+      <change afterPath="$PROJECT_DIR$/java/util/concurrent/locks/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/util/concurrent/atomic/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/concurrent/atomic/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/javacode_workspace/hongzhe-JDK1.8_SRC&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/javacode_workspace/hongzhe-ford_v2i_vue_ui_code&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -118,7 +121,10 @@
       <workItem from="1662514175017" duration="3927000" />
       <workItem from="1662598267651" duration="942000" />
       <workItem from="1662599283066" duration="790000" />
-      <workItem from="1662616161096" duration="2056000" />
+      <workItem from="1662616161096" duration="2711000" />
+      <workItem from="1662702112184" duration="2924000" />
+      <workItem from="1663030527906" duration="710000" />
+      <workItem from="1663117166311" duration="1500000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 最外面目录说明">
       <created>1660705346223</created>
@@ -267,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662617953596</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: atomic">
+      <created>1662621155669</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662621155669</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -341,7 +354,8 @@
     <MESSAGE value="feat: function 函数式编程  LongToDoubleFunction" />
     <MESSAGE value="feat: function 函数式编程  finish" />
     <MESSAGE value="feat: atomic Striped64" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: atomic Striped64" />
+    <MESSAGE value="feat: atomic" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: atomic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

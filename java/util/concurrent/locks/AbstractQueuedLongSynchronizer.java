@@ -157,19 +157,28 @@ public abstract class AbstractQueuedLongSynchronizer
      */
     static final class Node {
         /** Marker to indicate a node is waiting in shared mode */
+        /** 指示节点在共享模式下等待的标记 */
         static final Node SHARED = new Node();
         /** Marker to indicate a node is waiting in exclusive mode */
+        /** 指示节点在独占模式下等待的标记 */
         static final Node EXCLUSIVE = null;
 
         /** waitStatus value to indicate thread has cancelled */
+        /** waitStatus 值表示线程已取消 */
         static final int CANCELLED =  1;
         /** waitStatus value to indicate successor's thread needs unparking */
+        /** waitStatus 值表示后继线程需要 unparking */
         static final int SIGNAL    = -1;
         /** waitStatus value to indicate thread is waiting on condition */
+        /** waitStatus 值表示线程正在等待条件 */
         static final int CONDITION = -2;
         /**
          * waitStatus value to indicate the next acquireShared should
          * unconditionally propagate
+         */
+        /**
+         * waitStatus 值指示下一个 acquireShared 应该
+         * 无条件传播
          */
         static final int PROPAGATE = -3;
 
@@ -206,6 +215,40 @@ public abstract class AbstractQueuedLongSynchronizer
          * The field is initialized to 0 for normal sync nodes, and
          * CONDITION for condition nodes.  It is modified using CAS
          * (or when possible, unconditional volatile writes).
+         */
+        /**
+         * 状态字段，仅取值：
+         * SIGNAL：此节点的继任者是（或即将成为）
+         * 阻塞（通过公园），所以当前节点必须
+         * 释放它的后继者，或者
+         * 取消。为了避免竞争，获取方法必须
+         * 首先表明他们需要一个信号，
+         * 然后重试原子获取，然后，
+         * 失败时，阻塞。
+         * CANCELLED：此节点因超时或中断而被取消。
+         * 节点永远不会离开这个状态。尤其是，
+         * 取消节点的线程不再阻塞。
+         * CONDITION：此节点当前在条件队列中。
+         * 不会用作同步队列节点
+         * 直到转移，此时的状态
+         * 将被设置为 0。（此处使用此值有
+         * 与其他用途无关
+         * 字段，但简化了机制。）
+         * PROPAGATE：一个 releaseShared 应该被传播到其他
+         * 节点。这是设置的（仅用于头节点）
+         * doReleaseShared 以确保传播
+         * 继续，即使其他操作有
+         * 自干预以来。
+         * 0：以上都不是
+         *
+         * 这些值按数字排列以简化使用。
+         * 非负值表示节点不需要
+         * 信号。所以，大多数代码不需要检查特定的
+         * 值，仅用于符号。
+         *
+         * 对于普通同步节点，该字段初始化为 0，并且
+         * 条件节点的条件。使用 CAS 修改
+         *（或在可能的情况下，无条件的 volatile 写入）。
          */
         volatile int waitStatus;
 
