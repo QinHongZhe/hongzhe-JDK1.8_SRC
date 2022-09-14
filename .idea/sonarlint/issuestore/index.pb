@@ -45,3 +45,15 @@ c
 .java/util/concurrent/atomic/AtomicBoolean.java,1\1\11b4402c3677528ba584216aa26914673603b82b
 Z
 *java/util/function/LongBinaryOperator.java,f\f\ff4feb4dc50ed7241a3a01fcb8adde89730b4dde
+\
+,java/util/concurrent/locks/package-info.java,f\7\f70bd4142f47708c24c6cc70c20bf032196a5afd
+T
+$java/util/concurrent/locks/Lock.java,9\a\9a98e54fb65779e5543725ae03b968d585d8c610
+[
++java/util/concurrent/locks/LockSupport.java,4\3\438c11c92552dea9d822ecb78ceefa4112011684
+[
++java/util/concurrent/locks/StampedLock.java,c\7\c77eebf35181f848328d125cd6c1e677e3f71781
+U
+%java/util/concurrent/atomic/readme.md,8\9\892ced6b680e28311b414f39a13d0fc618c80437
+T
+$java/util/concurrent/locks/readme.md,7\e\7e42d0584940650a068f7be487269fce7633e90e

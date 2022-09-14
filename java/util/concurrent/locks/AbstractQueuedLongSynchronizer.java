@@ -263,6 +263,17 @@ public abstract class AbstractQueuedLongSynchronizer
          * cancelled thread never succeeds in acquiring, and a thread only
          * cancels itself, not any other node.
          */
+        /**
+         * 链接到当前节点/线程所依赖的前驱节点
+         * 用于检查 waitStatus。在排队期间分配，并为空
+         * 仅在出队时出列（为了 GC）。此外，当
+         * 取消一个前任，我们短路while
+         * 找到一个未取消的，它将永远存在
+         * 因为头节点永远不会被取消：一个节点变成
+         * 仅作为成功获取的结果。一个
+         * 取消的线程永远不会成功获取，只有一个线程
+         * 取消自身，而不是任何其他节点。
+         */
         volatile Node prev;
 
         /**
@@ -278,11 +289,28 @@ public abstract class AbstractQueuedLongSynchronizer
          * point to the node itself instead of null, to make life
          * easier for isOnSyncQueue.
          */
+        /**
+         * 链接到当前节点/线程的后继节点
+         * 释放时解除停放。在排队期间分配，调整
+         * 当绕过取消的前辈时，并且无效（对于
+         * 为了 GC）出队时。 enq 操作不
+         * 分配前任的下一个字段，直到附件之后，
+         * 所以看到一个空的下一个字段并不一定意味着
+         * 节点位于队列末尾。但是，如果出现下一个字段
+         * 为空，我们可以从尾部扫描 prev 到
+         * 再检查一遍。取消节点的下一个字段设置为
+         * 指向节点本身而不是null，使生命
+         * isOnSyncQueue 更容易。
+         */
         volatile Node next;
 
         /**
          * The thread that enqueued this node.  Initialized on
          * construction and nulled out after use.
+         */
+        /**
+         * 使该节点入队的线程。初始化时间
+         * 构造并在使用后归零。
          */
         volatile Thread thread;
 
@@ -296,10 +324,23 @@ public abstract class AbstractQueuedLongSynchronizer
          * we save a field by using special value to indicate shared
          * mode.
          */
+        /**
+         * 链接到等待条件的下一个节点，或者特殊的
+         * 值共享。因为条件队列只能访问
+         * 在独占模式下，我们只需要一个简单的
+         * 链接队列以在节点等待时保持节点
+         * 条件。然后将它们转移到队列中
+         * 重新获取。因为条件只能是排他的，
+         * 我们保存一个字段，使用特殊值表示共享
+         * 模式。
+         */
         Node nextWaiter;
 
         /**
          * Returns true if node is waiting in shared mode.
+         */
+        /**
+         * 如果节点在共享模式下等待，则返回 true。
          */
         final boolean isShared() {
             return nextWaiter == SHARED;
@@ -311,6 +352,13 @@ public abstract class AbstractQueuedLongSynchronizer
          * be elided, but is present to help the VM.
          *
          * @return the predecessor of this node
+         */
+        /**
+         * 返回前一个节点，如果为 null，则抛出 NullPointerException。
+         * 当前任不能为空时使用。空检查可以
+         * 被省略，但存在以帮助 VM。
+         *
+         * @return 此节点的前任
          */
         final Node predecessor() throws NullPointerException {
             Node p = prev;
@@ -339,6 +387,12 @@ public abstract class AbstractQueuedLongSynchronizer
      * initialization, it is modified only via method setHead.  Note:
      * If head exists, its waitStatus is guaranteed not to be
      * CANCELLED.
+     */
+    /**
+     * 等待队列的头部，延迟初始化。除了
+     * 初始化，只能通过setHead方法修改。笔记：
+     * 如果head存在，则保证其waitStatus不存在
+     * 取消。
      */
     private transient volatile Node head;
 
