@@ -400,10 +400,17 @@ public abstract class AbstractQueuedLongSynchronizer
      * Tail of the wait queue, lazily initialized.  Modified only via
      * method enq to add new wait node.
      */
+    /**
+     * 等待队列的尾部，延迟初始化。仅通过修改
+     * 方法 enq 添加新的等待节点。
+     */
     private transient volatile Node tail;
 
     /**
      * The synchronization state.
+     */
+    /**
+     * 同步状态。
      */
     private volatile long state;
 
@@ -411,6 +418,11 @@ public abstract class AbstractQueuedLongSynchronizer
      * Returns the current value of synchronization state.
      * This operation has memory semantics of a {@code volatile} read.
      * @return current state value
+     */
+    /**
+     * 返回同步状态的当前值。
+     * 此操作具有 {@code volatile} 读取的内存语义。
+     * @return 当前状态值
      */
     protected final long getState() {
         return state;
@@ -420,6 +432,11 @@ public abstract class AbstractQueuedLongSynchronizer
      * Sets the value of synchronization state.
      * This operation has memory semantics of a {@code volatile} write.
      * @param newState the new state value
+     */
+    /**
+     * 设置同步状态的值。
+     * 此操作具有 {@code volatile} 写入的内存语义。
+     * @param newState 新状态值
      */
     protected final void setState(long newState) {
         state = newState;
