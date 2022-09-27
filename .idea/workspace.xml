@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: lock start">
+    <list default="true" id="c88fcd2f-82b6-4eab-b648-09210108e381" name="Default Changelist" comment="feat: lock AbstractQueuedLongSynchronizer 阅读">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/util/concurrent/TimeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/util/concurrent/TimeUnit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,22 +66,22 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/javacode_workspace/hongzhe-spring-brick",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.reader.mode",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/workspace/ivics-java-web&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -123,7 +124,9 @@
       <workItem from="1663030527906" duration="710000" />
       <workItem from="1663117166311" duration="2819000" />
       <workItem from="1663123926567" duration="28000" />
-      <workItem from="1663204549855" duration="4770000" />
+      <workItem from="1663204549855" duration="5527000" />
+      <workItem from="1663289949438" duration="1192000" />
+      <workItem from="1664246573769" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 最外面目录说明">
       <created>1660705346223</created>
@@ -286,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663120295082</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: lock AbstractQueuedLongSynchronizer 阅读">
+      <created>1663234332783</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663234332783</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -362,7 +372,8 @@
     <MESSAGE value="feat: atomic Striped64" />
     <MESSAGE value="feat: atomic" />
     <MESSAGE value="feat: lock start" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: lock start" />
+    <MESSAGE value="feat: lock AbstractQueuedLongSynchronizer 阅读" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: lock AbstractQueuedLongSynchronizer 阅读" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

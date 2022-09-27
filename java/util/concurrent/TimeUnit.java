@@ -68,6 +68,10 @@ package java.util.concurrent;
  * @since 1.5
  * @author Doug Lea
  */
+
+/**
+ * 时间转换工具
+ */
 public enum TimeUnit {
     /**
      * Time unit representing one thousandth of a microsecond
@@ -200,6 +204,10 @@ public enum TimeUnit {
     // enum classes should not be listed as abstract), method convert
     // etc. are not declared abstract but otherwise act as abstract methods.
 
+    // 保持与 1.5 的完全签名兼容性，并改进
+    // 生成的 javadoc 的清晰度（参见 6287639：Abstract methods in
+    // 枚举类不应被列为抽象类），方法转换
+    // etc. 未声明为抽象方法，但在其他方面充当抽象方法。
     /**
      * Converts the given time duration in the given unit to this unit.
      * Conversions from finer to coarser granularities truncate, so
@@ -217,6 +225,24 @@ public enum TimeUnit {
      * @return the converted duration in this unit,
      * or {@code Long.MIN_VALUE} if conversion would negatively
      * overflow, or {@code Long.MAX_VALUE} if it would positively overflow.
+     */
+    /**
+     * 将给定单位中的给定持续时间转换为该单位。
+     * 从细粒度到粗粒度的转换会截断，所以
+     * 失去精度。例如，转换 {@code 999} 毫秒
+     * 到秒会导致 {@code 0}。从粗略转换到
+     * 更细粒度的参数，将在数值上
+     * 如果为负数，则溢出饱和到 {@code Long.MIN_VALUE}
+     * {@code Long.MAX_VALUE} 如果是肯定的。
+     *
+     * <p>例如，要将 10 分钟转换为毫秒，请使用：
+     * {@code TimeUnit.MILLISECONDS.convert(10L, TimeUnit.MINUTES)}
+     *
+     * @param sourceDuration 给定 {@code sourceUnit} 中的持续时间
+     * @param sourceUnit {@code sourceDuration} 参数的单位
+     * @return 以这个单位转换的持续时间，
+     * 或 {@code Long.MIN_VALUE} 如果转换会产生负面影响
+     * 溢出，或 {@code Long.MAX_VALUE} 如果它肯定会溢出。
      */
     public long convert(long sourceDuration, TimeUnit sourceUnit) {
         throw new AbstractMethodError();

@@ -41,8 +41,6 @@ L
 java/util/function/readme.md,f\7\f7749f7ed344d6e83e8616d79da22e31c303a275
 c
 3java/util/concurrent/atomic/AtomicIntegerArray.java,b\c\bcf32ec899d5392d9c3c70a13849df605bd5bfc9
-^
-.java/util/concurrent/atomic/AtomicBoolean.java,1\1\11b4402c3677528ba584216aa26914673603b82b
 Z
 *java/util/function/LongBinaryOperator.java,f\f\ff4feb4dc50ed7241a3a01fcb8adde89730b4dde
 \
